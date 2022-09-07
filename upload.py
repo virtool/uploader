@@ -44,7 +44,7 @@ def upload_files(file_list, path, api_key, user_handle, url, file_type):
     auth = authenticate(url, user_handle, api_key)
 
     for file_name in file_list:
-        if re.search("\.fq(?:\.gz|\.gzip)$", file_name):
+        if re.search("\.(?:fq|fastq)(?:\.gz|\.gzip)?$", file_name):
             result = upload_file(path, file_name, url, file_type, auth)
         else:
             result = UploadStatus("skipped", "File skipped, incorrect filetype", file_name)
