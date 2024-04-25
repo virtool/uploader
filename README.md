@@ -1,6 +1,6 @@
-# virtool-upload
+# Virtool Uploader
 
-A CLI tool for uploading sequencing data to Virtool cloud
+A CLI tool for uploading sequencing data to Virtool instances.
 
 ## Configuration
 
